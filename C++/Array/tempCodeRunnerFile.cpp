@@ -1,0 +1,4 @@
+void printArray(int arr[])
+// {
+
+// }

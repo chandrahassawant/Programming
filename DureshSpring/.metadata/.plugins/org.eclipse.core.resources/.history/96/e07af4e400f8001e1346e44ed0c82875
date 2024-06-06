@@ -1,0 +1,5 @@
+package com.knowit.Repository;
+
+public interface BookRepository  extends {
+
+}

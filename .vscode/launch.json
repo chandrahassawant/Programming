@@ -1,0 +1,134 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "String_Java.Test",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "Linked_List",
+      "request": "launch",
+      "mainClass": "Collection_Java.Linked_List",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "Anagram",
+      "request": "launch",
+      "mainClass": "problems.Anagram",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "Anagrams",
+      "request": "launch",
+      "mainClass": "stringProblems.Anagrams",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "Java.Test",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "print",
+      "request": "launch",
+      "mainClass": "important.print",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "print_the_number",
+      "request": "launch",
+      "mainClass": "Top90_Java.print_the_number",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "demo1",
+      "request": "launch",
+      "mainClass": "DemoJava.demo1",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "first_char",
+      "request": "launch",
+      "mainClass": "Java_String.first_char",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "ans",
+      "request": "launch",
+      "mainClass": "ans",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "ReverseWords",
+      "request": "launch",
+      "mainClass": "ReverseWords",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "type": "java",
+      "name": "Reverse151",
+      "request": "launch",
+      "mainClass": "Reverse151",
+      "projectName": "Baberi_abdfcd53"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "e:/Baberi/C++",
+      "program": "e:/Baberi/C++/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "C/C++: gcc.exe build and debug active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "C:/MinGW/bin",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "C/C++: gcc.exe build active file"
+    }
+  ]
+}

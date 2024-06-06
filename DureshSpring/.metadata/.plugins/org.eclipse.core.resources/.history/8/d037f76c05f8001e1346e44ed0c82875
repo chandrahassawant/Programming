@@ -1,0 +1,89 @@
+package com.knowit.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+import com.knowit.Entities.Book;
+import com.knowit.Repository.BookRepository;
+
+@Component
+public class BookService {
+
+	private BookRepository bookRepository;
+
+	private static List<Book> list = new ArrayList<>();
+
+	static {
+		list.add(new Book(12, "Java", 200, false));
+		list.add(new Book(16, "C++", 200, true));
+		list.add(new Book(100, "C", 200, true));
+
+	}
+
+	// get all books
+	public List<Book> getAllBooks() {
+		List<Book> list = (List<Book>) this.bookRepository.findAll();
+		return list;
+	}
+
+	// get particular book
+	public Book getBookById(int id) {
+//	    for (Book book : list) {
+//	        if (book.getId() == id) {
+//	            return book;
+//	        }
+//	    }
+//	    // If the book with the specified ID is not found, return null or throw an exception
+		Book book = null;
+		try {
+			this.bookRepository.findById(id);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return book; // Or throw an exception indicating book not found
+	}
+
+	// adding the book
+	public Book addBook(Book b) {
+		Book result = bookRepository.save(b);
+		return result;
+
+	}
+
+	// delete a book
+	public void deleteBook(int id) {
+//	    Book bookToRemove = null;
+//	    for (Book book : list) {
+//	        if (book.getId() == id) {
+//	            bookToRemove = book;
+//	            break; // Found the book, no need to continue iterating
+//	        }
+//	    }
+//	    if (bookToRemove != null) {
+//	        list.remove(bookToRemove);
+//	    }
+		bookRepository.deleteById(id);
+
+	}
+
+	// Update book details
+	public void updateBook(Book updatedBook, int id) {
+//	    for (Book book : list) {
+//	        if (book.getId() == id) {
+//	            // Update the details of the book
+//	            book.setName(updatedBook.getName());
+//	            book.setPrice(updatedBook.getPrice());
+//	            book.setStatus(updatedBook.isStatus());
+//	            return book; // Return the updated book
+//	        }
+//	    }
+//	    // If the book with the specified ID is not found, return null or throw an exception
+//	    return null; // Or throw an exception indicating book not found
+
+		updatedBook.setId(id);
+		bookRepository.save(updatedBook);
+	}
+
+}

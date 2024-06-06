@@ -1,0 +1,15 @@
+package com.knowit.Controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MainController {
+	
+	public String home()
+	{
+		System.out.println("Tis is home controller");
+		return "home";
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package com.knowit.Entities;
+
+import org.springframework.aot.generate.Generated;
+
+public class Book {
+	
+	@Id 
+	@Generated(strategy=GenerationType.IDENTITY)
+	private int id;
+	private String name;
+	private double price;
+	private boolean status;
+	
+
+}

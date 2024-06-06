@@ -1,0 +1,19 @@
+package com.knowit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.knowit.entities.User;
+
+@SpringBootApplication
+public class SpringJpaApplication {
+
+	public static void main(String[] args) {
+	ApplicationContext context=	SpringApplication.run(SpringJpaApplication.class, args);
+	UserRepository userRepository=context.getBean(UserRepository.class);
+	
+	User user = new User();
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.knowit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.knowit.entities.User;
+
+@SpringBootApplication
+public class SpringJpaApplication {
+
+	public static void main(String[] args) {
+	ApplicationContext context=	SpringApplication.run(SpringJpaApplication.class, args);
+	UserRepository userRepository=context.getBean(UserRepository.class);
+	
+	
+	//create object of user
+	User user = new User();
+	user.setName("Candu");
+	user.setCity("Pune");
+	user.setStatus(" I am Java Programmer");
+	
+	User user2 = new User();
+	user2.setName("Diksha");
+	user2.setCity("Kudal");
+	user2.setStatus(" I am Python Programmer");
+	
+	userRepository.save(user2)
+	
+	
+	}
+
+}

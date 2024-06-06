@@ -1,0 +1,6 @@
+spring.application.name=Spring
+
+spring.mvc.view.prefix= /views/
+spring.mvc.view.suffix=.jsp
+
+server.port=3536

@@ -1,0 +1,28 @@
+package com.knowit.Controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.knowit.Entities.Book;
+import com.knowit.Service.BookService;
+
+@RestController
+public class BookController {
+	
+	
+	private BookService bookservice;
+	
+//	@RequestMapping(value = "/books",method = RequestMethod.GET)
+	@GetMapping("/books")
+	public Book getbooks()
+	{
+		
+		Book book = new Book();
+		book.setId(123);
+		book.setName("hII");
+		book.setPrice(150);
+		book.setStatus(false);
+		return book;
+	}
+
+}

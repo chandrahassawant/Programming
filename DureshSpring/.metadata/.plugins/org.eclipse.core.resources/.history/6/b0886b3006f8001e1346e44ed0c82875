@@ -1,0 +1,13 @@
+package com.knowit.Repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.knowit.Entities.Book;
+
+@Repository
+public interface BookRepository extends CrudRepository<Book, Integer> {
+
+	public Book findfindById(int id);
+
+}
